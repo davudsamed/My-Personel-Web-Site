@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/AStil2.css">
+    <script type="text/javascript" src="Web Projesi Js.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>İletişim</title>
+</head>
+
+<body>
+    <nav>
+        <a href="AHakkımda.html">Hakkımda</a>
+        <a href="AÖzgeçmiş.html">Özgeçmiş</a>
+        <a href="AŞehrim.html">Şehrim</a>
+        <a href="AMirasımız.html">Mirasımız</a>
+        <a href="Aİletişim.html">İletişim</a>
+    </nav>
+
+    <div class="container">
+        <h3 class="baslik">İletişim</h3>
+        <form action="form.php" onsubmit="return formKontrol(this);" name="uyeFormu" method="post">
+            <div class="row ">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="isim" name="isim" placeholder="Adınız" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="soyisim" placeholder="Soyadınız" required>
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="email" placeholder="E-mail Adresiniz">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="telefon_numarasi" placeholder="Telefon Numaranız"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <b>Cinsiyet:</b><br>
+                    <input type="radio" name="Cinsiyet" value="Erkek">Erkek<br>
+                    <input type="radio" name="Cinsiyet" value="Kadın">Kadın<br>
+                </div>
+                <div class="col-md-6">
+                    <b>Doğum Tarihin:</b>
+                    <input type="date" class="form-control" name="Doğum_Tarihi"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Ülke:<br>
+                    <select class="form-control" name="ulke">
+                        <option value="Türkiye">Türkiye</option>
+                        <option value="Kanada">Kanada</option>
+                        <option value="İtalya">İtalya</option>
+                        <option value="Amerika">Amerika</option>
+                        <option value="Almanya">Almanya</option>
+                        <option value="Polonya">Polonya</option>
+                        <option value="İngiltere">İngiltere</option>
+
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <b>Uğraştığınız Sporlar:</b><br>
+                    <input type="checkbox" name="spor1" value="Futbol">Futbol<br>
+                    <input type="checkbox" name="spor2" value="Basketbol">Basketbol<br>
+                    <input type="checkbox" name="spor3" value="Voleybol">Voleybol<br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn-danger" value="Gönder">
+                    <input type="reset" class="btn-primary" value="Temizle">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        Davud Samed Tombul Kişisel Web Sitesi © 2019 Tüm hakları saklıdır.
+    </footer>
+
+</body>
+
+</html>

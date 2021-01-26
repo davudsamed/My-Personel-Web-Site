@@ -1,0 +1,330 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.baslik {
+    text-align: center;
+    padding-top: 10px;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+nav {
+    
+    overflow: hidden;
+    background-color: #333;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.blok {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.resim {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 250px;
+}
+
+.tablo {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+
+}
+
+.tablo td,
+.tablo th {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+
+.tablo tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tablo th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+.img-bir,
+.img-iki,
+.img-uc,
+.img-dort,
+.img-bes {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+}
+
+.img-bir {
+    left: 0px;
+}
+
+.img-iki {
+    left: 800px;
+}
+
+.img-uc {
+    left: 1600px;
+}
+
+.img-dort {
+    left: 2400px;
+}
+
+.img-bes {
+    left: 3200px;
+}
+
+.slider-wrapper>.slider {
+    position: absolute;
+    left: 0px;
+    width: 3200px;
+    height: 600px;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-name: sliders;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.slider-wrapper>.slider:hover {
+    -webkit-animation-play-state: paused;
+}
+
+.slider-wrapper>.slider>a>span {
+    position: absolute;
+    background: #333;
+    color: white;
+    left: 0;
+    top: 80%;
+    padding: 8px 22px;
+    display: table;
+}
+
+.slider-wrapper a {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    float: left;
+}
+
+@-webkit-keyframes sliders {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: -800px;
+    }
+
+    30% {
+        left: -800px;
+    }
+
+    40% {
+        left: -1600px;
+    }
+
+    50% {
+        left: -1600px;
+    }
+
+    60% {
+        left: -2400px;
+    }
+
+    70% {
+        left: -2400px;
+    }
+
+    80% {
+        left: -3200px;
+    }
+
+    90% {
+        left: -3200px;
+    }
+}
+
+.makale {
+    float: left;
+}
+
+@media only screen and (max-device-width : 480px) {
+    header {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 10px;
+        height: 8px;
+        width: 7px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .row {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .resim {
+        height: 69px;
+        width: 69px;
+        margin-left: 0px;
+    }
+
+}
+
+@media only screen and (max-device-width : 1115px) {
+    .slider-wrapper {
+        width: 100%;
+        margin-left: 20px;
+        border-radius: 0px;
+    }
+
+    .img-bir,
+    .img-iki,
+    .img-uc,
+    .img-dort,
+    .img-bes {
+        position: absolute;
+        width: 1000px;
+    }
+
+    .img-bir {
+        left: 0px;
+    }
+
+    .img-iki {
+        left: 1000px;
+    }
+
+    .img-uc {
+        left: 2000px;
+    }
+
+    .img-dort {
+        left: 3000px;
+    }
+
+    .img-bes {
+        left: 4000px;
+    }
+
+    .slider-wrapper>.slider {
+        position: absolute;
+        left: 0px;
+        width: 4000px;
+    }
+
+    .slider-wrapper>.slider>a>span {
+        left: 0;
+        top: 80%;
+        padding: 10px 50px;
+    }
+
+    @-webkit-keyframes sliders {
+        0% {
+            left: 0px;
+        }
+
+        10% {
+            left: 0px;
+        }
+
+        20% {
+            left: -1000px;
+        }
+
+        30% {
+            left: -1000px;
+        }
+
+        40% {
+            left: -2000px;
+        }
+
+        50% {
+            left: -2000px;
+        }
+
+        60% {
+            left: -3000px;
+        }
+
+        70% {
+            left: -3000px;
+        }
+
+        80% {
+            left: -4000px;
+        }
+
+        90% {
+            left: -4000px;
+        }
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
